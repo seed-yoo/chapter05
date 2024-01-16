@@ -15,11 +15,11 @@ public class PhoneBookApp {
 		Scanner sc = new Scanner(System.in);
 		String str;
 		
-		Reader fr = new FileReader("C:\\javaStudy\\workspace\\chapter05\\src\\com\\javaex\\ex03\\PhoneDB_원본.txt");
+		Reader fr = new FileReader("C:\\javaStudy\\workspace\\chapter05\\src\\com\\javaex\\ex04\\PhoneDB_원본.txt");
 		BufferedReader br = new BufferedReader(fr);
 		
 		// ※ 주의 - 쓰기를 사용하면 원본 파일이 다 없어짐
-		Writer out = new FileWriter("C:\\javaStudy\\PhoneDB_원본_inset.txt");
+		Writer out = new FileWriter("C:\\javaStudy\\workspace\\chapter05\\src\\com\\javaex\\ex04\\PhoneDB_원본_inset.txt");
 		BufferedWriter bw = new BufferedWriter(out);
 		
 		// 파일에서 읽은 내용을 리스트로 관리
