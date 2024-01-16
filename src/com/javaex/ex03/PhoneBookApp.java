@@ -14,6 +14,7 @@ public class PhoneBookApp {
 		Reader fr = new FileReader("C:\\javaStudy\\workspace\\chapter05\\src\\com\\javaex\\ex03\\PhoneDB_원본.txt");
 		BufferedReader br = new BufferedReader(fr);
 		
+		
 		// 반복
 		while (true) {
 			// 파일을 1줄씩 읽는다.
@@ -35,8 +36,6 @@ public class PhoneBookApp {
 			System.out.println("핸드폰: " + hp );
 			System.out.println("회사: " + company );
 			System.out.println("");
-			
-			
 			
 		}
 		
