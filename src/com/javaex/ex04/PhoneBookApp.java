@@ -25,27 +25,22 @@ public class PhoneBookApp {
 		// 파일에서 읽은 내용을 리스트로 관리
 		// (이름, 핸드폰, 회사)	--> 리스트 이름 : Person
 		
-		//System.out.println("정보를 입력하세요.");
-		String info = "유재석,010-3333-5555,비트";
-		
-		
 		while (true) {
 			// 파일을 1줄씩 읽는다.
 			str = br.readLine();
 			
 			// null 이면 반복문 끝.
 			if(str == null) {
-				bw.write(info);
 				break;
 			}
 			bw.write(str);
 			bw.newLine();
 			
-			String[] personInfo = str.split(",");
+			String[] Person = str.split(",");
 			
-			String name = personInfo[0];
-			String hp = personInfo[1];
-			String company = personInfo[2];
+			String name = Person[0];
+			String hp = Person[1];
+			String company = Person[2];
 			
 			// 출력
 			System.out.println("이름: " + name );
@@ -55,10 +50,23 @@ public class PhoneBookApp {
 			
 		}
 		
-		
 		// 자신의 정보 Person 리스트에 추가하고
-		
 		// 리스트 전체 내용을 PhoneDb.txt에 씀
+		String info = "유재석,010-3333-5555,비트";
+		String[] Person = info.split(",");
+		
+		String name = Person[0];
+		String hp = Person[1];
+		String company = Person[2];
+		
+		// 출력
+		System.out.println("이름: " + name );
+		System.out.println("핸드폰: " + hp );
+		System.out.println("회사: " + company );
+		System.out.println("");
+		
+		
+		bw.write(info);
 		
 		br.close();
 		bw.close();
